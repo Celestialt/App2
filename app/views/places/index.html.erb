@@ -8,6 +8,13 @@
 				<small><%= place.user.email %></small>
 			<% end %>
 
+			<div>
+			<% if place.photos.present? %>
+		    <%= image_tag place.photos.last.picture %>
+			<% end %>
+			
+			</div>
+
 	<% if place.comments.present? %>
 		<div class="col-12">
 	    <blockquote>
@@ -20,15 +27,7 @@
 		  	</div>
 		<% end %>
 		</div>
-			<div>
-			<% if place.photos.present? %>
-				<% @place.photos.each do |photo| %>
-		    <%= image_tag place.photo.picture %>
-		    <%= place.photo.caption %>
-				<% end %>
-			<% end %>
-			</div>
-
+			
 <% end %>
 
 	

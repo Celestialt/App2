@@ -20,7 +20,15 @@
 		  	</div>
 		<% end %>
 		</div>
-	
+			<div>
+			<% if place.photos.present? %>
+				<% @place.photos.each do |photo| %>
+		    <%= image_tag place.photo.picture %>
+		    <%= place.photo.caption %>
+				<% end %>
+			<% end %>
+			</div>
+
 <% end %>
 
 	

@@ -92,9 +92,11 @@
     </div>
     <% end %>
 </div>
-<div>
+
+<div class="booyah-box col-3 offset-9">
 <% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture %>
+    <%= image_tag photo.picture, class: "image-class" %>
+
     <%= photo.caption %>
   <% end %>
 </div>

@@ -7,16 +7,13 @@
 			<% if place.user.present? %>
 				<small><%= place.user.email %></small>
 			<% end %>
-
-			<div>
-			<% if place.photos.present? %>
-		    <%= image_tag place.photos.last.picture %>
-			<% end %>
 			
-			</div>
-
-	<% if place.comments.present? %>
-		<div class="col-12">
+			<% if place.photos.present? %>
+		    <%= image_tag place.photos.last.picture, class: "image-class" %>
+			<% end %>
+				
+		<% if place.comments.present? %>
+			<div class="col-12">
 	    <blockquote>
 	      <% if place.comments.last.humanized_rating.present? %>
 	      <b><%= place.comments.last.humanized_rating %></b> -

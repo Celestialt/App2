@@ -73,3 +73,4 @@ gem 'geocoder'
 gem 'figaro'
 #for image field
 gem 'carrierwave', '~> 1.0'
+gem "fog"

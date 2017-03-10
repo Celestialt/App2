@@ -79,8 +79,10 @@ float: center;
 }
     
 .carousel-inner > .carousel-item > img, .carousel-inner > a > img {
-  height: 550px;
+
+  max-height: 700px;
   width: 100%;
+  
 }
 
 

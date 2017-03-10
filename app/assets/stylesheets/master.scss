@@ -78,5 +78,9 @@ float: center;
  
 }
     
+.carousel-inner > .carousel-item > img, .carousel-inner > a > img {
+  height: 550px;
+  width: 100%;
+}
 
 
